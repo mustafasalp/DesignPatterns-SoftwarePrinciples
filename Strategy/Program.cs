@@ -1,4 +1,6 @@
-﻿
+﻿using Strategy.Interface;
+using Strategy.Context;
+using Strategy.Strategies;
 
 var paymentOptions = new PaymentOptions
 {
@@ -38,63 +40,6 @@ do
     paymentService.PayViaStrategy(paymentOptions);
 
 } while (Console.ReadKey().Key != ConsoleKey.Escape);
-
-
-public class PaymentService
-{
-    private IPaymentService _paymentService;
-    public PaymentService()
-    {
-            
-    }
-    public PaymentService(IPaymentService paymentService)
-    {
-        _paymentService = paymentService;
-    }
-            
-    public void SetPaymentService(IPaymentService paymentService)
-    {
-        _paymentService = paymentService;
-    }
-
-    public bool PayViaStrategy(PaymentOptions paymentOptions)
-    {
-        return _paymentService.Pay(paymentOptions);
-    }
-}
-
-// Strategies: The classes that actually implement the payment processing logic for different strategies.
-public class GarantiBankPaymentService : IPaymentService
-{
-    public bool Pay(PaymentOptions paymentOptions)
-    {
-        Console.WriteLine("Processing payment through Garanti Bank...");
-        return true;
-    }
-}
-
-public class AkbankPaymentService : IPaymentService
-{
-    public bool Pay(PaymentOptions paymentOptions)
-    {
-        Console.WriteLine("Processing payment through Akbank...");
-        return true; 
-    }
-}
-
-public class IsBankPaymentService : IPaymentService
-{
-    public bool Pay(PaymentOptions paymentOptions)
-    {
-        Console.WriteLine("Processing payment through IsBank...");
-        return true; 
-    }
-}
-
-public interface IPaymentService
-{
-    bool Pay(PaymentOptions paymentOptions);
-}
 
 public class PaymentOptions
 {
