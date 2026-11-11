@@ -10,5 +10,5 @@ This repository contains design patterns and software principles implemented by 
 Feel free to use it!
 
 **Resources:**
-- https://refactoring.guru/
-- https://www.youtube.com/watch?v=Spq_ClIy-AM&list=PLRp4oRsit1bzcZhzv-xvHGn1SS0wwLIvR
+- [Refactoring.Guru](https://refactoring.guru/)
+- [Design Patterns Course (YouTube)](https://www.youtube.com/watch?v=Spq_ClIy-AM&list=PLRp4oRsit1bzcZhzv-xvHGn1SS0wwLIvR)
