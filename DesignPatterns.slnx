@@ -4,4 +4,5 @@
   <Project Path="State/State.csproj" Id="73f5e251-879c-4cc0-98a7-d829414164b3" />
   <Project Path="StateSakizMachine/StateSakizMachine.csproj" Id="b978fde8-9ef7-4bca-802e-5e4819ac91f9" />
   <Project Path="Strategy/Strategy.csproj" />
+  <Project Path="TemplateMethod/TemplateMethod.csproj" Id="03f2df3d-ac6e-4176-81d2-5823cce9be79" />
 </Solution>
